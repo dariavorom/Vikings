@@ -522,6 +522,6 @@ ul {
 }
 @media (max-width: 376px) {
     .page-header {
-        height: 150vh;
+        height: 130vh;
     }
 }
