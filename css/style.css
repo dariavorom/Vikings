@@ -469,6 +469,11 @@ ul {
         margin-bottom: 30px;
     }
 }
+@media (max-width: 540px) {
+    .page-header {
+        height: 150vh;
+    }
+}
 @media (max-width: 425px) {
     body {
         font-size: 16px;
@@ -522,6 +527,11 @@ ul {
 }
 @media (max-width: 376px) {
     .page-header {
-        height: 130vh;
+        height: 170vh;
+    }
+}
+@media (max-width: 320px) {
+    .page-header {
+        height: 215vh;
     }
 }
