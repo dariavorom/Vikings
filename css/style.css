@@ -20,9 +20,12 @@ body {
 .title {
     font-size: 36px;
     line-height: 42px;
-    margin-bottom: 171px;
+    margin-bottom: 100px;
     font-weight: 400;
     text-align: center;
+}
+.season {
+    margin-bottom: 172px;
 }
 a {
     color: inherit;
@@ -34,7 +37,6 @@ ul {
 .header {
     background-image: url("../images/header-bg.jpg");
     height: 100vh;
-    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center 50px;
@@ -72,7 +74,8 @@ ul {
     text-decoration: underline;
 }
 .logo__img {
-    padding-top: 178px;
+    padding-top: 15vh;
+    max-width: 880px;
 }
 .about__inner {
     display: flex;
@@ -105,7 +108,7 @@ ul {
     font-size: 72px;
     line-height: 84px;
     color: #85CCDC;
-    padding-top: 444px;
+    padding-top: 40vh;
     padding-right: 35px;
     margin-bottom: 40px;
 }
@@ -168,6 +171,9 @@ ul {
     top: -72px;
     left: 0;
     z-index: -1;
+}
+.seasons__item:nth-child(n + 10)::before {
+    content: counter(number);
 }
 .seasons__link {
     background:#0E0E0E;
@@ -277,4 +283,90 @@ ul {
 .page-logo {
     position: absolute;
     left: 0;
+}
+@media (max-width: 1366px) {
+    .logo__img {
+        width: 50%;
+    }
+    .menu__list-link {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .about__info {
+        width: 250px;
+    }
+}
+@media (max-width: 1024px) {
+    .video__text {
+        font-size: 55px;
+        line-height: 60px;
+        padding-top: 45vh;
+        padding-right: 70px;
+    }
+    .video__text span {
+        padding-right: 240px;
+    }
+    .video__btn {
+        margin-right: 100px;
+    }
+}
+@media (max-width: 768px) {
+    .logo__img {
+        padding-top: 21vh;
+    }
+    .menu__list {
+       display: none;
+    }
+    .seasons__inner {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 75px 50px;
+    }
+    .about__inner {
+        display: block;
+    }
+    .section-page {
+        padding: 50px 0;
+    }
+    .title {
+        margin-bottom: 50px;
+    }
+    .season {
+        margin-bottom: 85px;
+    }
+    .video__text {
+        font-size: 50px;
+        line-height: 55px;
+        padding-right: 60px;
+
+    }
+    .video__text span {
+        padding-right: 114px;
+    }
+    .video__btn {
+        margin-right: 10px;
+        padding-left: 56px;
+    }
+    .video__btn::before {
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        top: -15px;
+    }
+}
+@media (max-width: 425px) {
+    body {
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .video__text {
+        font-size: 40px;
+        line-height: 45px;
+        padding-right: 10px;
+    }
+    .video__text span {
+        padding-right: 50px;
+    }
+    .video__btn {
+        margin-right: 0;
+    }
 }
