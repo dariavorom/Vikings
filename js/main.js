@@ -1,4 +1,10 @@
 $(function(){
+    //Menu-burger
+    $(".menu__btn").on("click", function(event) {
+        event.preventDefault();
+        $(".menu__list").toggleClass("menu__list-active");
+    });
+
     //Section video fancy-box
     $('[data-fancybox]').fancybox({
         youtube : {
