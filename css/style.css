@@ -357,7 +357,7 @@ ul {
         z-index: 10;
     }
     .menu {
-        background: linear-gradient(180deg, #111213 0%, #111213 17%, rgba(32, 31, 33, 0) 86.33%);
+        background: linear-gradient(180deg, #111213 0%, #111213 20%, rgba(32, 31, 33, 0) 37.33%);
         padding: 0;
     }
     .menu__btn {
