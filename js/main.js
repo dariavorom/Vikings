@@ -20,6 +20,7 @@ $(function(){
         prevArrow: '<button class="slick-btn slick-prev"><img class="arrow-p" src="images/arrow-left.png" alt="prev"></button>',
         nextArrow: '<button class="slick-btn slick-next"><img class="arrow-n" src="images/arrow-right.png" alt="next"></button>',
         asNavFor: '.heroes__slider-text',
+        adaptiveHeight: true,
         responsive: [
             {
                 breakpoint: 426,
@@ -35,6 +36,7 @@ $(function(){
         slidesToScroll: 1,
         asNavFor: '.heroes__slider-img',
         fade: true,
-        arrows: false
+        arrows: false,
+        adaptiveHeight: true
     });
 });
